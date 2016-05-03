@@ -89,5 +89,5 @@ cache:
     - third_party/
 
 before_cache:
-  # Delete python bytecode to prevent cache rebuild.
+  # Delete python bytecode to prevent cache rebuild. force build
   - find third_party -name "*.pyc" -print -delete
